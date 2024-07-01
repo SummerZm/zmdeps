@@ -10,6 +10,6 @@ set_property(DIRECTORY PROPERTY EP_PREFIX external)
 file(MAKE_DIRECTORY ${EXTERNAL_ROOT}/include ${EXTERNAL_ROOT}/lib)
 
 include(ExternalProject)
+include(cmake/ffmpeg.cmake)
 include(cmake/gflags.cmake)
 include(cmake/googletest.cmake)
-
