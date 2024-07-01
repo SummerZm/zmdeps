@@ -4,12 +4,12 @@ project(zmdeps)
 #set(CMAKE_CXX_COMPILER "/usr/bin/g++" CACHE STRING "It's must be cache string. if not cross-compiler may be error.")
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_BUILD_TYPE "release")
-set(EXTERNAL_ROOT "./deps" CACHE STRING "Project root dir")
+set(EXTERNAL_ROOT "/Users/leaf/Work/Leafxu/github/ZmDeps/deps" CACHE STRING "Project root dir")
 
 set_property(DIRECTORY PROPERTY EP_PREFIX external)
-file(MAKE_DIRECTORY ${EXTERNAL_ROOT}/include ${EXTERNAL_ROOT}/lib)
+#file(MAKE_DIRECTORY ${EXTERNAL_ROOT}/include ${EXTERNAL_ROOT}/lib)  create file folder
 
 include(ExternalProject)
-include(cmake/ffmpeg.cmake)
+#include(cmake/ffmpeg.cmake)
 include(cmake/gflags.cmake)
-include(cmake/googletest.cmake)
+#include(cmake/googletest.cmake)
